@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     
+    <title>Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+.vl {
+    border-left: 6px solid white;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+</style>
+</head>
+
+<body>
+
+
+
+            <!-- /.navbar-header -->
+
+            
+                    
+            <!-- /.navbar-top-links -->
+
+          
+    
+            <div class="well well-lg"">
+                <div class="col-lg-12">
+                    <h1 class="page-header">API Mgmt Ops
+                       <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/SAP_AG_%28logo%29.gif"  align="right" alt="..." width=25%></h1>
+                       <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i color:Red></i><h5> Netherlands Time </h5>
+                        </div>  
+                        <iframe  src="http://free.timeanddate.com/clock/i6ikqucy/n16/fn2/fc900/tt0/tw1/tm1/th1/ta1/tb2" frameborder="0" width="251" height="22" allign="right" name="NL"></iframe>
+                           </iframe><iframe  src="http://free.timeanddate.com/clock/i6ikqucy/fn2/tt0/tw1/tm1/th1/ta1/tb2" frameborder="0" width="252" height="22" align="right"></iframe>
+                </div>
+                <!-- /.col-lg-12 -->
+                <!DOCTYPE html>
+<html>
+<head>
+	<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'EU1-Rot')">EU1-Rot</button>
+  <button class="tablinks" onclick="openCity(event, 'EU2-Frankfurt')">EU2-Frankfurt</button>
+  <button class="tablinks" onclick="openCity(event, 'EU3-Amsterdam')">EU3-Amsterdam</button>
+  <button class="tablinks" onclick="openCity(event, 'US1-Ashburn')">US1-Ashburn</button>
+  <button class="tablinks" onclick="openCity(event, 'US2-SantaClara')">US2-SantaClara</button>
+  <button class="tablinks" onclick="openCity(event, 'US3-Sterling')">US3-Sterling</button>
+  <button class="tablinks" onclick="openCity(event, 'AU1-Australia')">AU1-Australia</button>
+  <button class="tablinks" onclick="openCity(event, 'CA1-Canada')">CA1-Canada</button>
+  <button class="tablinks" onclick="openCity(event, 'CN1-China')">CN1-China</button>
+  <button class="tablinks" onclick="openCity(event, 'BR1-Brazil')">BR1-Brazil</button>
+  <button class="tablinks" onclick="openCity(event, 'SA1-S.Arabia')">SA1-S.Arabia</button>
+  <button class="tablinks" onclick="openCity(event, 'RU1-Russia')">RU1-Russia</button>
+  <button class="tablinks" onclick="openCity(event, 'JP1-Japan')">JP1-Japan</button>
+</div>
+
+<div id="EU1-Rot" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod/projects/api_management_production" target="_blank">EU1-Rot-Prod</a></td>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod/projects/api_management_test" target="_blank">EU1-Rot-Test</a></td> 
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod/projects/api_management_vlab" target="_blank">EU1-Rot-Vlab</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td> <a href="https://155.56.55.88" target="_blank">ROT-Prod-UI</a></td>
+        <td> <a href="https://155.56.55.22" target="_blank">ROT-Test-UI</a></td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td >venkatasatyanarayana.chatraspalli@sap.com	</td> 
+        <td>venkatasatyanarayana.chatraspalli@sap.com</td> 
+        <td>N/A</td>                                 
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">ApimgmtR00t1</td>
+        <td class="center">ApimgmtR00t1</td>
+        <td>N/A</td>
+    </tr>
+    	      <tr>
+    	      	<th>Sanity Access</th>
+    	      	<td> <a href="https://prodapiportalapimgmtpr-apimgmtopsvlabrot.hana.ondemand.com" target="_blank">API-Portal</a><p> <a href="https://proddevportalapimgmtpr-apimgmtopsvlabrot.hana.ondemand.com/" target="_blank">DEV-Portal</a></p></td>
+    	      	<td><a href="https://testapiportalapimgmtptstr-apimgmtopsvlabrot.hana.ondemand.com/" target="_blank">API-Portal </a><p><a href="https://testdevportalapimgmtptstr-apimgmtopsvlabrot.hana.ondemand.com/ target="_blank">DEV-Portal</td></a></p>
+    	      	<td> N/A</td>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="EU3-Amsterdam" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.eu-nl-1.cloud.sap/hcp03/api-management-prod-nl/compute/instances" target="_blank">NL1-Amsterdam-Prod-CC</a></td> 
+        <td><a href="https://dashboard.eu-nl-1.cloud.sap/hcp03/api-management-test-nl/compute/instances" target="_blank">NL1-Amsterdam-Test-CC</a></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td> <a href="https://10.47.44.198" target="_blank">NL1-Prod-UI</a></td>
+        <td> <a href="https://157.133.170.67" target="_blank">NL1-Test-UI</td>
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>Nl1prodadmin@sap.com</td> 
+        <td>adminn11tst@sap.com</td>                                
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Nlprodapigee121!</td>
+        <td class="center">Adminpwdn1test</td>
+      
+    </tr>
+    	      <tr>
+    	      	<th>Sanity Access</th>
+    	      	<td> <a href="	https://prodeu3apiportalapimgmtpeu3-s5b557546.eu3.hana.ondemand.com" target="_blank">API-Portal</a><p> <a href="https://prodeu3devportalapimgmtpeu3-s5b557546.eu3.hana.ondemand.com/" target="_blank">DEV-Portal</a></p></td>
+    	      	<td><a href="https://prodeu3apiportalapimgmtpeu3-scbea68d7.eu3.hana.ondemand.com/" target="_blank">API-Portal </a><p><a href="https://prodeu3devportalapimgmtpeu3-scbea68d7.eu3.hana.ondemand.com/" target="_blank">DEV-Portal</td></a></p>
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="US1-Ashburn" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_nsq_prod" target="_blank">US1-NSQ-Prod</a></td> 
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_nsq_prod/projects/api_management_test_nsq" target="_blank">US1-NSQ-Test</a></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://169.145.62.138" target="_blank">US1-Prod-UI</a></td>
+        <td><a href="https://169.145.62.241" target="_blank">US1-Test-UI</a></td>
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>uspadmin@sap.com</td> 
+        <td>ustadmin@sap.com</td>                                
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">fsacoeS$2Cefd</td>
+        <td class="center">rsr@d12YUdfvc</td>
+      
+    </tr>
+    	      <tr>
+    	      	<th>Sanity Access</th>
+    	      	<td> <a href="	https://produsapiportalapimgmtpa-b2ded1a5d.us1.hana.ondemand.com" target="_blank">API-Portal</a><p> <a href="https://produsdevportalapimgmtpa-b2ded1a5d.us1.hana.ondemand.com/" target="_blank">DEV-Portal</a></p></td>
+    	      	<td><a href="https://testusapiportalapimgmtptsta-b2ded1a5d.us1.hana.ondemand.com/" target="_blank">API-Portal </a><p><a href="https://testusdevportalapimgmtptsta-b2ded1a5d.us1.hana.ondemand.com/" target="_blank">DEV-Portal</td></a></p>
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="US2-SantaClara" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_santaclara/projects/api_management_production_santclara" target="_blank">US2-SANTACLARA-Prod</a></td>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_santaclara/projects/api_management_test_santclara" target="_blank">US2-SANTACLARA-Test</a></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://157.133.32.17" target="_blank">US2-Prod-UI</a></td> 
+        <td><a href="https://157.133.32.45" target="_blank">US2-Test-UI</a></td>
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>uswtest@sap.com</td> 
+        <td>uswtest@sap.com</td>                                
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">vftkcx@123AB</td>
+        <td class="center">vsjk@123IJ</td>
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="US3-Sterling" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_nsq_prod" target="_blank">US3-Sterling-Prod</a></td>
+        <td><a href="https://monsoon.mo.sap.corp/organizations/sap_api_management_prod_nsq_prod/projects/api_management_test_nsq" target="_blank">US3-Sterling-Test</a></a></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.254.83" target="_blank">US3-Prod-UI</a></td> 
+        <td><a href="https://130.214.254.74" target="_blank">US3-Test-UI</a></td>
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>Us3prodadmin@sap.com</td> 
+        <td>Us3testadmin@sap.com</td>                                
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Admin!ppwd123</td>
+        <td class="center">P@sswdus3test!</td>
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="AU1-Australia" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.ap-au-1.cloud.sap/hcp03/api-management-prod-au/compute/instances" target="_blank">AU1-AUS-Prod</a></td>
+        <td><a href="https://dashboard.ap-au-1.cloud.sap/hcp03/api-management-test-au/compute/instances" target="_blank">AU1-AUS-Test</a></td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://157.133.168.179" target="_blank">AU1-Prod-UI</a></td> 
+        <td><a href="https://157.133.168.124" target="_blank">AU1-Test-UI</a></td>
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+          <td></td>
+        <td>testau@sap.com</td> 
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td>Apimgmtr@00t!</td>
+        <td class="center">ApimgmtR00t1</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="CA1-Canada" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.na-ca-1.cloud.sap/hcp03/api-management-prod-ca1/compute/instances" target=_blank">CA1-Canada-Prod-CC</a></td>
+        <td><a href="https://dashboard.na-ca-1.cloud.sap/hcp03/api-management-test-ca1/compute/instances" target="_blank">CA1-Canada-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.238.84" target="_blank">CA1-Prod-UI</a></td>
+        <td><a href="https://130.214.238.78" target="_blank">CA1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>Ca1prodadmin@sap.com</td>
+        <td>Ca1testadmin@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Passwdprodca1!</td>
+        <td class="center">Passwdtestca1!</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="CN1-China" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.ap-cn-1.cloud.sap/hcp03/api-management-prod-cn1/compute/instances" target="_blank">CN1-CHINA-Prod-CC</a></td>
+        <td><a href="https://dashboard.ap-cn-1.cloud.sap/hcp03/api-management-test-cn1/compute/instances" target="_blank">CN1-CHINA-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.254.74" target="_blank">CN1-Prod-UI</a></td>
+        <td><a href="https://157.133.186.102" target="_blank">CN1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>cn1prod@sap.com</td>
+        <td>Admincn1@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Cnprod@dminpwd!</td>
+        <td class="center">Pwdcnprod123!</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="BR1-Brazil" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.la-br-1.cloud.sap/hcp03/api-management-prod-br1/compute/instances" target=_blank">BR1-Brazil-Prod-CC</a></td>
+        <td><a href="https://dashboard.la-br-1.cloud.sap/hcp03/api-management-test-br1/compute/instances" target="_blank">BR1-Brazil-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.236.81" target="_blank">BR1-Prod-UI</a></td>
+        <td><a href="https://130.214.236.83" target="_blank">BR1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>Br1prodadmin@sap.com</td>
+        <td>Labr1admintest@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Apigeepwdlabrprod!</td>
+        <td class="center">Saptestlabr1pwd!</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="SA1-S.Arabia" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.ap-sa-1.cloud.sap/hcp03/api-management-prod-sa1/compute/instances" target="_blank">SA1-S.Arabia-Prod-CC</a></td>
+        <td><a href="https://dashboard.ap-sa-1.cloud.sap/hcp03/api-management-test-sa1/compute/instances" target="_blank">SA1-S.Arabia-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.222.83" target="_blank">SA1-Prod-UI</a></td>
+        <td><a href="https://130.214.222.77" target="_blank">SA1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>apsa1pradmin@sap.com</td>
+        <td>apsatstadm@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Apsaadmprodpwd123!</td>
+        <td class="center">Sa1tstadminpwd123!</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="RU1-Russia" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.eu-ru-1.cloud.sap/hcp03/api-management-prod-ru1/compute/instances" target="_blank">RU1-RUSSIA-Prod-CC</a></td>
+        <td><a href="https://dashboard.eu-ru-1.cloud.sap/hcp03/api-management-test-ru1/compute/instances" target="_blank">RU1-RUSSIA-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://130.214.252.90" target="_blank">RU1-Prod-UI</a></td>
+        <td><a href="https://130.214.252.79" target="_blank">RU1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>ru1admuserprd@sap.com</td>
+        <td>ru1admuserprd@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Prdadminpwdru!</td>
+        <td class="center">Prdadminpwdru!</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="JP1-Japan" class="tabcontent">
+<div class="container">
+         
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.ap-jp-1.cloud.sap/hcp03/api-management-prod-jp1/compute/instances" target="_blank">JP1-Japan-Prod-CC</a></td>
+        <td><a href="https://dashboard.ap-jp-1.cloud.sap/hcp03/api-management-test-jp1/compute/instances" target="_blank">JP1-Japan-Test-CC</a></td>                              
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td><a href="https://157.133.182.90" target="_blank">JP1-Prod-UI</a></td>
+        <td><a href="https://157.133.182.69" target="_blank">JP1-Test-UI</a></td>
+        
+        
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td>Jpprodadmin@sap.com</td>
+        <td>Jptestadmin@sap.com</td>
+                                        
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Apigeejpr00t!</td>
+        <td class="center">Admin!ppwd123</td>
+        
+      
+    </tr>
+    	      
+    	      	
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+</div>
+
+<div id="EU2-Frankfurt" class="tabcontent">
+ <div class="container">
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <td><a href="https://dashboard.eu-de-2.cloud.sap/hcp03/api-management-prod-eu2/compute/instances" target="_blank">EU2-Frankfurt-Prod-CC</a></td>
+        <td><a href="https://dashboard.eu-de-2.cloud.sap/hcp03/api-management-test-eu2/compute/instances" target="_blank">EU2-Frankfurt-Test-CC</a></td> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th> Edge UI</tH>
+        <td> <a href="https://130.214.228.120" target="_blank">EU2-Prod-UI</td>
+        <td> <a href="https://130.214.228.70" target="_blank">EU2-Test-UI</a></td>
+      </tr>
+      <tr>
+      <th>ID</th>
+        <td >Eude2prod@sap.com	</td> 
+        <td>Eu2admin@sap.com</td>                                  
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td class="center">Apimgmtr00t!</td>
+        <td class="center">Apimgmtde2r00t!</td>
+    </tr>
+    <tr>
+    	<th>Sanity Urls</th>
+    	<td><a href="https://prodeu2apiportalapimgmtpeu2-i1zy66p7xd.eu2.hana.ondemand.com/" target="_blank">API-Portal</a><p><a href="https://prodeu2devportalapimgmtpeu2-i1zy66p7xd.eu2.hana.ondemand.com/" target="_blank">DEV-Portal</a></td></p>
+    	<td><a href="https://prodeu2apiportalapimgmtpeu2-smjrf53cgm.eu2.hana.ondemand.com/" target="_blank">API-Portal</a><p><a href="https://prodeu2devportalapimgmtpeu2-smjrf53cgm.eu2.hana.ondemand.com/">DEV-Portal</a></p></td>
+    </td></tr>
+    </tbody>
+</div>
+</div>
+</table>
+
+ 
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
+
+                
+</div>
+            </div>
+            <!-- /.row -->
+            
+              
+               
+                        
+
+               <iframe  width="100%"
+    height="300" src="https://bridge.mo.sap.corp/#/view/FU0r3UVhhznFPyjj6URQsX1m31eDIN3t"> </iframe>
+            <div class="left-panel">
+            
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="glyphicon glyphicon-fire"></i> Reporting
+                            <div class="pull-right">
+                                
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        
+                                            
+                    <div class="panel-body">
+                            <div class="list-group">
+                                <a href="https://support.wdf.sap.corp/sap(bD1lbiZjPTAwMSZkPW1pbg==)/crm_logon/default.htm"" target="_blank" class="list-group-item">
+                                    <i>CSS</i> 
+                                  
+                                </a>
+                                <a href="https://spc.ondemand.com/" target="_blank" class="list-group-item">
+                                    <i>SPC</i>
+                                    
+                                </a>
+                                <a href="https://jam4.sapjam.com/blogs/show/wJiKfEk0s1JbD7deMbf35V" target="_blank" class="list-group-item"><i>Sanity Urls</i></a>
+                                <a href="https://bridge.mo.sap.corp/#/view/FU0r3UVhhznFPyjj6URQsX1m31eDIN3t" target="_blank" class="list-group-item">
+                                    <i>Bridge-Page</i>
+                                    
+                                </a>
+                                <a href="https://wiki.wdf.sap.corp/wiki/display/DTS/EOD+Support" target="_blank" class="list-group-item">
+                                    <i>EOD Support</i>
+                                    
+                                </a>
+                                <a href="https://wiki.wdf.sap.corp/wiki/display/DTS/RCA" target="_blank" class="list-group-item">
+                                    <i>RCA Page</i> 
+                                    
+                                </a>
+                                 <a href="https://wiki.wdf.sap.corp/wiki/display/CloudOps/API+Management+-+Support+Process " target="_blank" class="list-group-item">
+                                    <i>APIM Support Process</i> 
+                                    
+                                </a>
+                                <a href="https://reporting.ondemand.com/sap/crp/cdo" target="_blank" class="list-group-item">
+                                    <i>Cloud Reporting</i>
+                                </a>  
+                            
+          </td></div></a></div></div>
+     <div class="col-lg-16">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Monitoring Zabbix/ Uptime
+                        </div>
+                        <!-- /.panel-heading -->
+                         <div class="panel-body">
+                            <div class="list-group">
+                                <a href="http://172.18.102.109/zabbix/dashboard.php?ddreset=1&sid=849140c5e98c1c55" target="_blank" class="list-group-item">
+                                    <i>ROT</i> 
+                                  
+                                </a>
+                                <a href="http://172.18.102.110/zabbix/zabbix.php?action=dashboard.view" target="_blank" class="list-group-item">
+                                    <i>ROT-Test</i>
+                                    
+                                </a>
+                                <a href="http://172.20.28.88/zabbix/dashboard.php" target="_blank" class="list-group-item">
+                                    <i> US-1</i>
+                                    
+                                </a>
+                                <a href="http://172.20.32.25/zabbix" target="_blank" class="list-group-item">
+                                    <i>US-2</i>
+                                    
+                                </a>
+                                <a href="http://10.47.44.197:443/zabbix" target="_blank" class="list-group-item">
+                                    <i>EU3 -PostNL</i> 
+                                    
+                                </a>
+                                <a href="http://10.47.24.88:443/zabbix/" target="_blank" class="list-group-item">
+                                    <i>AU</i>
+                                </a>  
+                                <a href="http://10.236.100.250:443/zabbix/" target="_blank" class="list-group-item">
+                                    <i>EU2</i>
+                                </a>  
+                                <a href="http://10.236.60.27:443/zabbix/" target="_blank" class="list-group-item">
+                                    <i>AE1</i>
+                                </a>  
+                                <a href="http://10.47.90.8:443/zabbix/"target="_blank" class="list-group-item">
+                                    <i>CN1</i>
+                                </a>  
+                                
+                            <div>
+                                <a href="https://uptime.int.sap.eu2.hana.ondemand.com/monitors" target="_blank" class="btn btn-default btn-block"><b>UPTIME</a></b></div>
+                                <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Site24x7
+                        </div>
+                                            
+                    <div class="panel-body">
+                            <div class="list-group">
+                                <a href="https://www.site24x7.com/sv.do?id=KTy9VBJe2rhdtx%2Bx%2Ft%2BJ0RDlPFJNRrvFq8v%2FR2l5r3YGtN9msOPrrcYb4DvsQiY%2FUR5WD%2FXshycb%0AxrwvH6CoPP6PgJrnHQiJ#/!#current_KTy9VBJe2rhoSDOg9h7DQObFgBDBY8Lp45p5RHhKB3QGtN9msOPrrcYb4DvsQiY%2FUR5WD%2FXshycb%0AxrwvH6CoPHoiIFDuVU4z" target="_blank" class="list-group-item">
+                                    <i>API Management</i> 
+                                  
+                                </a>
+                                <a href="https://www.site24x7.com/sv.do?id=KTy9VBJe2rgXw2Y6g2aGwVMpYwZF%2BN6Ip39ygr8l250GtN9msOPrrcYb4DvsQiY%2FUR5WD%2FXshycb%0AxrwvH6CoPP6PgJrnHQiJ#/!#current_KTy9VBJe2rhfgAtYtwyPrFoxQPlAw1Jf1H5mrZu%2F3mkGtN9msOPrrcYb4DvsQiY%2FUR5WD%2FXshycb%0AxrwvH6CoPHoiIFDuVU4z" target="_blank" class="list-group-item">
+                                    <i>Content Hub</i>
+                                    
+                                </a>
+                                
+                        </div></div></div>
+                             </div></div></div>
+         
+          </div>
+
+                                            </td></div></a>
+                        <!-- /.panel-body -->
+                                            </td>
+
+                    </div>
+    
+                     
+                
+               
+                <!-- /.col-lg-8 -->
+               
+                    
+                                            </td></style></a>
+                    </div>
+<style>
+.left-panel
+{        
+   
+    width:60%;
+    height:100px;
+    float:left;        
+}
+.right-panel
+{        
+    
+    width:40%;
+    height:100px;
+    float:left;
+}
+
+</style>
+ <div class="right-panel">
+                <div class="col-lg-10">
+                    <div class="panel panel-default">
+                            
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i> <strong class="primary-font"> JAM</strong></div>
+                           <div class="pull-right">
+                   
+                            </div>
+                        <!-- /.panel-heading -->
+                         <div class="panel-body">
+                            <div class="list-group">
+                                <a href="https://jam4.sapjam.com/groups/dpfZg9xXnrw9KxrQLpy8C0/content?folder_id=RVytYUn554VaYtE99PhfYM" target="_blank" class="list-group-item">
+                                    <i>Templates</i> 
+                                  
+                                </a>
+                                <a href="https://jam4.sapjam.com/wiki/show/ULTWOC6FKXRhBD1x2HFc9V" target="_blank" class="list-group-item">
+                                    <i>CUV Trail Provisioning</i>
+                                    
+                                </a>
+                                <a href="https://jam4.sapjam.com/blogs/show/KvVgw7y5vDHZRaUyb542eX" target="_blank" class="list-group-item">
+                                    <i> Jenkins Upgrade for Content Hub</i>
+                                    
+                                </a>
+                                <a href="https://jam4.sapjam.com/blogs/show/cKDxxBG7cdB3OaKWxoHYJv" target="_blank" class="list-group-item">
+                                    <i>Jenkins Upgrade for API Management</i>
+                                    
+                                </a>
+                                <a href="https://jam4.sapjam.com/groups/dpfZg9xXnrw9KxrQLpy8C0/content?folder_id=jKOC1N78Lwctc5IfrsvIEq" target="_blank" class="list-group-item">
+                                    <i>AWS-KT</i> 
+                                    
+                                </a>
+                                <a href="https://jam4.sapjam.com/groups/dpfZg9xXnrw9KxrQLpy8C0/content?folder_id=tFsYEcq7Z9OZ5TTVKrVrdW" target="_blank" class="list-group-item">
+                                    <i>Roster</i>
+                                </a>  
+                             </div></a>
+    </div> 
+     
+                        
+                        <!-- /.panel-body -->
+</div>
+<style>
+.success {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+}
+.info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+}
+</style>
+          <div class="panel-body">
+                            <div class="list-group">
+      
+                                <a href="https://wiki.wdf.sap.corp/wiki/display/DTS/AWS+Support+Contact+and+Escalation" target="_blank" class="list-group-item">
+                                    <i><strong>AWS Support</strong></i> 
+                                  
+                                </a>
+                                <a href="https://wiki.wdf.sap.corp/wiki/display/CloudOps/API+Management+-+Support+Process" target="_blank" class="list-group-item"><i><strong>APIM Support Process</strong></i></a>
+                                
+                                <div class="success"><p><strong >CIS MOD: Call the number +49 6227 766550 and press 1 to get the CIS MOD</strong></p>
+                                    
+                                </a>    
+                                                    
+           
+                                    
+     </div></div>
+                                                    </div>             
+                                            <style></a>
+    
+                                            table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: ;
+    padding: 8px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+                    <!-- /.panel -->
+                   
+                    <!-- /.panel -->
+                  
+    <!-- /#wrapper -->
+                            </div></div></div></div></div></div>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
+
